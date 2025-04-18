@@ -82,6 +82,13 @@
       padding-left: 20px;
       line-height: 1.8;
     }
+    .fun-section .project {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
     footer {
       background-color: #2d3748;
       color: white;
@@ -99,9 +106,7 @@
 </head>
 <body>
   <nav>
-    <a href="#rwanda">Rwanda Map</a>
-    <a href="#lesotho">Lesotho Map</a>
-    <a href="#ghana">Ghana Airforce Map</a>
+    <a href="#maps">Map Projects</a>
     <a href="#fun">Fun Projects</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -112,34 +117,35 @@
   </header>
 
   <main>
-    <section class="project" id="rwanda">
-      <h2>Rwanda and Health (PDF)</h2>
-      <p>This map visualizes population coverage in relation to health facilities and illustrates Zipline’s delivery coverage across all three distribution centers in Rwanda.</p>
-      <embed src="Rwanda map.pdf" type="application/pdf">
+    <section id="maps">
+      <div class="project">
+        <h2>Rwanda and Health (PDF)</h2>
+        <p>This map visualizes population coverage in relation to health facilities and illustrates Zipline’s delivery coverage across all three distribution centers in Rwanda.</p>
+        <embed src="Rwanda map.pdf" type="application/pdf">
+      </div>
+
+      <div class="project">
+        <h2>Does Lesotho work? (PDF)</h2>
+        <p>This analysis explores optimal locations for placing a distribution center in Lesotho. It considers the elevation constraint for drone deliveries (maximum altitude: 2850m) and estimates population coverage from various locations. The chosen site, located near Rapokolana, offers the most effective reach within these parameters.</p>
+        <embed src="Updated Lesotho map.pdf" type="application/pdf">
+      </div>
+
+      <div class="project">
+        <h2>AIP Interpretation – Ghana Airforce Map (Interactive)</h2>
+        <p>This interactive Leaflet map visualizes and interprets information from the 2021 Aeronautical Information Publication (AIP) of the Ghana Airforce. It can be used to explore no-fly zones, restricted airspace, and key aviation infrastructure based on AIP data.</p>
+        <div id="map"></div>
+      </div>
     </section>
 
-    <section class="project" id="lesotho">
-      <h2>Does Lesotho work? (PDF)</h2>
-      <p>This analysis explores optimal locations for placing a distribution center in Lesotho. It considers the elevation constraint for drone deliveries (maximum altitude: 2850m) and estimates population coverage from various locations. The chosen site, located near Rapokolana, offers the most effective reach within these parameters.</p>
-      <embed src="Updated Lesotho map.pdf" type="application/pdf">
-    </section>
-
-    <section class="project" id="ghana">
-      <h2>AIP Interpretation – Ghana Airforce Map (Interactive)</h2>
-      <p>This interactive Leaflet map visualizes and interprets information from the 2021 Aeronautical Information Publication (AIP) of the Ghana Airforce. It can be used to explore no-fly zones, restricted airspace, and key aviation infrastructure based on AIP data.</p>
-      <div id="map"></div>
-    </section>
-    
     <section class="fun-section" id="fun">
       <h2>Fun Coding Projects (Beginner-Friendly)</h2>
       <p>Here are a few fun and creative projects I'm working on to expand my skills and showcase what I can build:</p>
       <ul>
-        <li><strong>Weather App:</strong> Enter a city to get live weather with a map pin drop.</li>
         <li><strong>Map Quiz:</strong> Guess the country based on a zoomed-in map area.</li>
         <li><strong>Custom Route Planner:</strong> Click to drop markers and calculate distances between them.</li>
         <li><strong>GeoMemory Game:</strong> Match countries, cities, or flags in a memory flip-style game.</li>
       </ul>
-      <p>More coming soon! Stay tuned as I keep learning and building.</p>
+      <p style="margin-top: 20px;">More coming soon! Stay tuned as I keep learning and building.</p>
     </section>
   </main>
 
